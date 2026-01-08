@@ -18,10 +18,17 @@ It uses Natural Language Processing (NLP) techniques to find similarity between 
 
 ## 📂 Dataset
 
-- TMDB 5000 Movies Dataset
-- Files used:
-  - tmdb_5000_movies.csv
-  - tmdb_5000_credits.csv
+This project uses the **TMDB 5000 Movies Dataset**.
+
+Due to GitHub file size limitations, the dataset files are not included in this repository.
+
+You can download the dataset from:
+https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
+
+Files used:
+- tmdb_5000_movies.csv
+- tmdb_5000_credits.csv
+
 
 ---
 
@@ -52,3 +59,4 @@ It uses Natural Language Processing (NLP) techniques to find similarity between 
 ```bash
 pip install -r requirements.txt
 streamlit run app/app.py
+
