@@ -17,18 +17,27 @@ venv/
 # Jupyter Notebook checkpoints
 # ===============================
 .ipynb_checkpoints/
-*.ipynb
 
 # ===============================
-# Large model & data files
-# ===============================
-*.pkl
-*.joblib
-
-# ===============================
-# Dataset files (large CSVs)
+# Ignore only large raw datasets
 # ===============================
 tmdb_5000_credits.csv
 tmdb_5000_movies.csv
 
-# =========================
+# ===============================
+# OS / Editor files
+# ===============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===============================
+# Streamlit cache
+# ===============================
+.streamlit/
+
+# ===============================
+# Logs
+# ===============================
+*.log
