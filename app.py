@@ -59,7 +59,7 @@ def recommend(movie):
 # ===============================
 # Streamlit Page Config
 # ===============================
-st.set_page_config(page_title="🎬 Movie Recommendation System", layout="wide")
+st.set_page_config(page_title=" Movie Recommendation System", layout="wide")
 
 # ===============================
 #Custom CSS
@@ -97,7 +97,7 @@ st.markdown("""
 # ===============================
 # App Layout
 # ===============================
-st.title("🎬 Movie Recommendation System")
+st.title(" Movie Recommendation System")
 st.write("Discover movies you’ll love. Select a movie to get recommendations!")
 
 selected_movie = st.selectbox("Choose a movie:", movie_list)
