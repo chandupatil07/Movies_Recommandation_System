@@ -1,1 +1,8 @@
-This file is not useful and to be deleted
+mkdir -p ~/.streamlit/
+
+echo "\
+[server]\n\
+headless = true\n\
+port = \$PORT\n\
+enableCORS = false\n\
+" > ~/.streamlit/config.toml
