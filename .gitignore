@@ -46,3 +46,9 @@ Thumbs.db
 # Logs
 # ===============================
 *.log
+
+
+.idea/
+__pycache__/
+*.pkl
+
