@@ -25,16 +25,11 @@ venv/
 *.ipynb
 
 # ===============================
-# Model & pickle files (IMPORTANT)
+# Model & pickle files
 # ===============================
 *.pkl
 *.joblib
-
-# ===============================
-# Data folders
-# ===============================
-data/
-temp-repo/
+!models/movie_dict.pkl
 
 # ===============================
 # OS files
