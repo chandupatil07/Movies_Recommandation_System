@@ -5,12 +5,12 @@ import requests
 import io
 
 # ===============================
-# 🔑 Your OMDb API Key
+# OMDb API Key
 # ===============================
 OMDB_API_KEY = "e39708f0"
 
 # ===============================
-# 📂 Load Pickle from Google Drive
+Load Pickle from Google Drive
 # ===============================
 def load_pickle_from_drive(file_id):
     url = f"https://drive.google.com/uc?id={file_id}"
@@ -28,7 +28,7 @@ similarity = load_pickle_from_drive(SIMILARITY_FILE_ID)
 movie_list = movies['title'].values
 
 # ===============================
-# 🎬 Fetch Poster from OMDb
+#Fetch Poster from OMDb
 # ===============================
 def fetch_poster(movie_name):
     url = f"http://www.omdbapi.com/?t={movie_name}&apikey={OMDB_API_KEY}"
@@ -39,7 +39,7 @@ def fetch_poster(movie_name):
     return "https://via.placeholder.com/300x450?text=No+Image"
 
 # ===============================
-# 🎥 Recommendation Function
+# Recommendation Function
 # ===============================
 def recommend(movie):
     movie_index = movies[movies['title'] == movie].index[0]
@@ -57,12 +57,12 @@ def recommend(movie):
     return recommended_movies, recommended_posters
 
 # ===============================
-# 🌟 Streamlit Page Config
+# Streamlit Page Config
 # ===============================
 st.set_page_config(page_title="🎬 Movie Recommendation System", layout="wide")
 
 # ===============================
-# 🎨 Custom CSS
+#Custom CSS
 # ===============================
 st.markdown("""
     <style>
@@ -95,7 +95,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ===============================
-# 🖥️ App Layout
+# App Layout
 # ===============================
 st.title("🎬 Movie Recommendation System")
 st.write("Discover movies you’ll love. Select a movie to get recommendations!")
