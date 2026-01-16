@@ -68,8 +68,8 @@ if st.button('Recommend'):
                 <div class="movie-card">
                     <img src="{poster}" width="150" style="border-radius:10px;">
                     <div class="movie-title">{title}</div>
-                    <div class="movie-info">📅 {year}</div>
-                    <div class="movie-info">🎭 {genre}</div>
+                    <div class="movie-info"> {year}</div>
+                    <div class="movie-info"> {genre}</div>
                 </div>
                 """,
                 unsafe_allow_html=True
